@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Buttons Practice
+    </title>
+    <link rel = "stylesheet" href = "Styles/buttons.css">           <!--Link element is special element as it doesn't require closing tag thus it is called void element and it takes 2 attributes rel(relation) defines type of linkage and second attribute is for link-->
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <button class="Subscribe-button">
+        SUBSCRIBE
+    </button>
+
+    <button class="Join-button">
+        JOIN
+    </button>
+
+    <button class="Tweet-button">
+        Tweet
+    </button>
+
+    <button class="Uber-button">
+        Request now
+    </button>
+
+    <button class="LinkedIN-button">
+        Apply on company website
+    </button>
+</body>
+
+</html>
+
+
+<!-- we have used border-style as out of 4 sides two of them weren't getting same color as the required ones-->
+<!--space(around an element) is margin-->
+<!--Trick to have rounded borders - half the size of smaller dimension of either height or width for border-radius-->
+
+
+<!-- a new attribute called class is used and class attribute is used to label html elements-->
+<!-- we target our particular class for css by using dot followed by classname-->
+<!--General technique is create element using HTML and style with CSS one-by-one-->
+<!--Multiple elements can have same class name-->
+
+
+<!--CSS Basics-->
+<!--CSS (Cascading Style Sheets) use to style our webpage to change its appearance of HTML elements -->
+<!--style element is used for css-->
+<!-- Css selectors it tells which elements we are targeting with our css code here we are targetting all buttons and css will be applied on it-->
+<!--Text left to the colon is called css property telling what we are changing and right to the colon is css value it tells what we are changing the property to -->
+<!--We can have multiple style in 1 css selectors -->
+<!--Property to change color of the text is color only-->
+<!-- CSS works - we tell on which we have to apply css and then we apply the styles.-->
+<!--px = pixels common meaurement unit in digital world-->
+<!--rgb value is more precise way of measuring color that simply writing color name-->
+<!-- minimum value is 0 and maximum value is 255 for rgb -->
+<!--rgb(255, 255, 255) will give white color and rgb(0, 0, 0) will give black color-->
+<!-- border-radius (The higher the pixels, more rounded the corners will be)-->
+<!--Normal arrow is cursor and a hand pointing to somewhere is pointer value in cursor css property-->
+<!--Opacity css property tells how much seethrough is available through html element it takes value between 0 and 1 (1 is normal no opacity) and by decreasing the number opacity increases and at 0 element will be transparent not visible on the screen-->
+<!-- New way to have colors is rgba rgb is same and a is for opacity property-->
+<!-- other way of having color is hex #1d9bf0 1d is for red, 9b for green and f0 for blue(rgb)-->
+<!--CSS Intermediate level (Hovers, Transitions, Shadows)-->
+<!-- On hovering over the button the color of the color either gets darkened or lighter-->
+
+
+<!--HOVERS STYLES-->
+
+<!--(.Subscribe-button:hover) will work or apply its block property only when we hover on the subscribe button-->
+<!--If we don't hover on the button then its normal css prop will be applied otherwise on hovering hover css block properties will be applied in addition to normal block properties-->
+<!--:hover is known as puesdo-class the class which adds extra css-->
+<!--:active is another puesdo-class which is applied only when we activates the button by clicking-->
+
+<!--TRANSITION STYLES-->
+
+<!--It is used to make smooth transition between normal css and puesdo class css for a particular button during hovering-->
+<!-- Transition property has two values one is css property on which we have to apply css and second is for how long to make transition generally of range of 0.15s is considered-->
+<!--Always put transition property in base css class-->
+
+<!--SHADOWS STYLES-->
+
+<!--box-shadow property is used for shadowing  first number determines horizontal position of the shadow , second number sets the value for vertical position of the shadow and third value is for blur and last value is for color-->
+
+<!--CSS Chrome DevTools-->
+<!--ChromeDev Tools is to inspect on web browser to give appropriate colors for CSS-->
+
+<!--CSS BOX MODEL-->
+<!--It allows us to add space between the elements and inside the element too-->
+<!-- 1. margin space around the elements. Margins can be applied in 4 directions like margin-left, margin-right and all-->
+<!-- 2. space inside the elements (around the text).-->
+<!--Using height and width property is not good in css as sometimes they lead to overflow of text and content outside the box (We consider everything in website as a box so css box model is applied to everything) So if we don't use height and width then by default text will align itself accordingly then we will adjust inside width and height by padding property-->
+<!--Padding can also applied in all 4 directions like padding-left , padding-right and all-->
+<!--Padding helps with the problem of overflow of the content 9if we add the content later too the padding helps the text to remain intact with the box-->
+
+<!--By default, broswer aligns the text as per our text i.e., text is in the same line. So to adjust our css property we use prop called vertical-align-->
+
+<!--href works by looking adjacently to the current file if there any buttons.css file exists or not if exists then it simply works it by there linking but
+ if css file is in some other folder then it simply changes its link with nameoffolder/filename.css and this is called filepaths-->

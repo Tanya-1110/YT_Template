@@ -1,0 +1,81 @@
+.thumbnail {
+    width: 100%;
+}
+
+.video-title {
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.video-author, .video-stats{
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.video-author{
+    margin-bottom: 4px;
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media (max-width: 750px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 751px) and (max-width: 999px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(min-width: 1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.video-info-grid{
+    display: grid;
+    grid-template-columns:50px 1fr;
+}
+
+.profile-picture {
+    width: 36px;
+    border-radius: 50px;
+}
+
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-time{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 5px;
+    bottom: 8px;
+}
+
+/* 400 is normal, 700 is bold, 500 is semi bold for font-weight property */
+
+/* CSS shorthands - padding: 4px; will set all 4 sides to have padding of 4px
+                    padding: 4px 10px; first value is for vertical dimension (top, bottom) and second value is for horizontal dimension(right, left) 
+                    padding: 4px, 10px, 20px 30px; first value is for top, second is for right, third is for bottom and 4th is for left (clockwise movement)
+                    margin also works in same way as padding for directions 
+                    
+                    border: 1px solid rgb(192, 192, 192); first is for width of border, second is for style and third is for color of border */ 

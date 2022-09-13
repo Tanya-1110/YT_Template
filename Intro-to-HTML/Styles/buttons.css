@@ -1,0 +1,101 @@
+/* Created in urge to not get confused in normal HTML structure of having both css and html together.*/
+
+
+.Subscribe-button {
+    background-color: rgb(198, 38, 38);
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+    vertical-align: top;
+}
+
+.Subscribe-button:hover {
+    opacity: 0.8;
+}
+
+.Subscribe-button:active {
+    opacity: 0.5;
+}
+
+.Join-button {
+    background-color: white;
+    color: rgb(69, 133, 217);
+    border-radius: 2px;
+    border-color: rgb(69, 133, 217);
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.Join-button:hover {
+    background-color: rgb(47, 154, 203);
+    color: white;
+}
+
+.Join-button:active {
+    opacity: 0.7;
+}
+
+.Tweet-button {
+    background-color: rgb(56, 130, 179);
+    color: white;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    border-radius: 18px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: box-shadow 0.15s;
+    vertical-align: top;
+}
+
+.Tweet-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.Uber-button {
+    background-color: black;
+    color: white;
+    height: 36px;
+    width: 124px;
+    cursor: pointer;
+    margin-left: 8px;
+    vertical-align: top;
+}
+
+.Uber-button:hover {
+    opacity: 0.5;
+}
+
+.LinkedIN-button {
+    background-color: rgb(71, 154, 226);
+    color: white;
+    height: 30px;
+    width: 190px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    margin-left: 8px;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+.LinkedIN-button:hover {
+    background-color: rgb(13, 42, 79);
+}

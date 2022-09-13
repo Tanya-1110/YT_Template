@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Practice</title>
+  </head>
+  <body style="padding-bottom: 1000px;">
+    <div style="
+      display: flex;
+      flex-direction: row;
+    ">
+      <div style="background-color: lightblue;">div 1 text</div>
+      <div style="background-color: lightpink;">div 2 <p>text</p></div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+    ">
+      <div style="
+        background-color: lightblue;
+        width: 100px;
+      ">100px</div>
+      <div style="
+        background-color: lightpink;
+        flex: 1;
+      ">flex: 1</div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+    ">
+      <div style="
+        background-color: lightblue;
+        flex: 1;
+      ">flex: 1</div>
+      <div style="
+        background-color: lightpink;
+        width: 100px;
+      ">100px</div>
+      <div style="
+        background-color: lightblue;
+        flex: 2;
+      ">flex: 2</div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gray;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    ">
+      <div style="
+        background-color: lightblue;
+        width: 100px;
+      ">100px</div>
+      <div style="
+        background-color: lightpink;
+        width: 100px;
+      ">100px</div>
+      <div style="
+        background-color: lightblue;
+        width: 100px;
+      ">100px</div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gray;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    ">
+      <div style="
+        background-color: lightblue;
+        width: 100px;
+      ">100px</div>
+      <div style="
+        background-color: lightpink;
+        width: 100px;
+      ">100px</div>
+      <div style="
+        background-color: lightblue;
+        width: 100px;
+      ">100px</div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gray;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    ">
+      <div style="
+        background-color: lightblue;
+        width: 100px;
+      ">100px</div>
+      <div style="
+        background-color: lightpink;
+        width: 100px;
+      ">100px</div>
+      <div style="
+        background-color: lightblue;
+        width: 100px;
+      ">100px</div>
+    </div>
+  </body>
+</html>
+
+<!--We use inline css in order to have css code close to html code for easy understanding and clarity-->
+<!--Elements inside flexbox will behave like inline-block elements rather being of block elements (As much spacde required horizontally by thde element only that much is used - inline-block) -->
+<!--Grids is rigid layout while flexbox is flexible layout-->
+<!--If we increase width of one element then rest of the elements will vertivcal align with the increased one.-->
+
+<!-- Similarities between flexbox and grid-->
+
+<!--1fr in grid is equal to flex: 1 in flexbox . Likewise 2fr is equal to flex: 2-->
+
+<!-- Differences between flexbox and grid-->
+
+<!--Grid first make columns so changes inside doesn't reflects outside but in case of flexbox changes are reflected back(FLexbox is flexible and grid is rigid )-->
+
+<!--Flexbox should be choose when we want flexible layout dependent on our content (sign in (4 icons) and sign out (3 icons) difference)-->
+
+<!--Justify-content property of flexbox has three values - start(left) , center, end(right)  and space-between value gives equal spacing between every element covering entire horizontal row -->
+
+<!--align-items fills up the space vertically and has default value stretch(stretching entire column) , start(at top of column), center, end(at bottom of column)-->

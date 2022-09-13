@@ -1,0 +1,45 @@
+.sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+}
+
+.sidebar-link{
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.sidebar-link:hover{
+    background-color: rgb(235, 235, 235);
+}
+
+.sidebar-link img{
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.sidebar-link div{
+    font-size: 10px;
+}
+
+/* without content height of divs is zero.*/
+
+/* class selector (.class_name)
+   element selector (<style>)
+   combine selectors by comma
+   combine selectors by space like sidebar-link img (this will target all img tags in sidebar-link class) */
+
+/* flexbox property align-items: center; does vertical alignment centerally and justify-content: center; aligns elements horizontal centerally */ 
+
+/* flex-direction: row; (row is default) sets elements horizontally but flex-direction: column; sets elements vertically which makes one element beneath other. */
+
+/*flex-direction: column; flips the property of align-items(horizontal) and justify-content(vertical) for centering what they usually do for row direction */  

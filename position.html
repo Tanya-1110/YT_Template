@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Position Practice</title>
+</head>
+
+<body style="
+    height: 3000px;
+    padding-top: 60px;
+    padding-left: 80px;
+  ">
+    <div style="
+      background-color: black;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      z-index: 1;
+    ">header</div>
+
+    <div style="
+      background-color: green;
+      color: white;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      top: 50px;
+      width: 72px;
+    ">
+        sidebar
+        <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      top: 0;
+      right: 0;
+      ">
+            X
+        </div>
+    </div>
+
+    <div style="
+    position: absolute;
+    background-color: red;
+    color: white;
+    top: 60px;
+    right: 10px;
+    ">
+        absolute
+    </div>
+
+    <div style="
+      background-color: lightblue;
+      height: 200px;
+      width: 200px;
+      position: static;
+    ">div 1</div>
+    <div style="
+      background-color: lightpink;
+      height: 200px;
+      width: 200px;
+      position: relative;
+    ">div 2
+        <div style="
+     position: absolute;
+     background-color: black;
+     color: white;
+     right: 10px;
+     bottom: 10px;
+     ">
+     5:00
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<!--css position -->
+
+<!--position: static; is the default position so writing it or not doesn't make much difference but position: fixed; fixes the element to which element it is applied and that element floats over other elements-->
+<!--4 properties of position - 1. top: 0px; fixes the element to top with 0 distance from the top
+                               2. left: 0px; element will be 0px far from left (distance between left edge and element)
+                               3. bottom: 20px 20 px up from bottom and 4.right same way 
+                            
+                               If two opposite directions are notified together then the element will stretch. -->
+
+<!--We can set our header either by using top, left, right, bottom (used when has to set relative to page) or height and width(fixed dimensions are given)-->
+
+<!--Making sure 2 elements doesn't concide while scrolling we can add padding top to body element-->
+
+<!--Position relative and Absolute-->
+
+<!--position: absolute; places element on the page which makes elements to move when page scrolls
+while position: fixed; places elements in browser window which makes elements not to move when page scrolls
+
+All this means that we scroll our page moves not the browser window-->
+
+<!--z-index determines which element will appear in front and which behind default value is 0
+    elements with higher z-index will appear in front of lower z-index value element-->
+
+<!--Whenever absolute element is placed inside fixed position, then absolute element will be relative to fixed element not with the page-->
+<!--When absolute element is inside the relative element, it aligns itself relative to element not to the page when we scroll down and this phenomena makes element to look normal on the page during scrolling-->
+
+<!--element below other will appear on top of other and relative element always appears on top on other elements while scrolling while position static will appear below others and to solve we have z-index property-->
+
+
+
+<!--css position is most important skill of css. 
+ 1 . It helps to add the sidebar and header and  make them fixed on the screen while scrolling 
+ 2 . Helps to add element on top of other element like video time on thumbnail and notification count on notification button-->
